@@ -279,6 +279,8 @@ function photosHTML(images, primaryimageurl) {
 }
 
 $("#feature").on("click", "a", async function (event) {
+  const url = $(this).attr("href");
+
   if (url.startsWith("mailto:")) {
     return;
   }
